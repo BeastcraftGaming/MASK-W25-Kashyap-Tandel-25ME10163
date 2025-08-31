@@ -1,0 +1,5 @@
+GET /home :
+GET /animes: return animes in concise format
+GET /animes/<anime-name>:
+
+POST /anime:
