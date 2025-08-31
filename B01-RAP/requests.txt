@@ -1,5 +1,5 @@
-GET /home :
+GET /home : shows hello world
 GET /animes: return animes in concise format
-GET /animes/<anime-name>:
+GET /animes/<anime-name>: return anime description
 
-POST /anime:
+POST /anime: pushes a new anime into the json file
