@@ -22,6 +22,9 @@ function signup(username, password){
     }
 
     users[username] = { password };
+
+    if (username.toLowerCase() === "dio") {console.log("KONO DIO DA!!");}
+    
     return { success: true, message: "User registered successfully" };
 }
 
