@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Naruto",
+    "description": "A young ninja, Naruto Uzumaki, dreams of becoming the strongest ninja and leader of his village while carrying the burden of a sealed demon fox within him."
+  },
+  {
+    "id": 2,
+    "title": "Death Note",
+    "description": "A high school student discovers a mysterious notebook that allows him to kill anyone by writing their name in it, leading to a battle of wits with a genius detective."
+  },
+  {
+    "id": 3,
+    "title": "Attack on Titan",
+    "description": "In a world where humanity is on the brink of extinction due to giant man-eating Titans, young soldiers fight to protect what remains behind massive walls."
+  },
+  {
+    "id": 4,
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "description": "Two brothers use alchemy in their quest to restore their bodies after a failed ritual, uncovering deep secrets about their world and its hidden power."
+  },
+  {
+    "id": 5,
+    "title": "One Piece",
+    "description": "Monkey D. Luffy and his crew sail across the seas in search of the ultimate treasure, the One Piece, while facing powerful foes and uncovering the world's mysteries."
+  },
+  {
+    "id": 6,
+    "title": "Demon Slayer",
+    "description": "A boy joins the Demon Slayer Corps to save his sister who was turned into a demon."
+  }
+]

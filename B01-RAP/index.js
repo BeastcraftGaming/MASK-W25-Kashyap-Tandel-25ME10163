@@ -1,6 +1,6 @@
 const express = require("express");
 const fs = require("fs");
-
+/*
 animes = {
     "Naruto": {
         "title": "Naruto",
@@ -18,9 +18,12 @@ animes = {
         "description": "A story about pirates"
     }
 };
+*/
+const animes = JSON.parse(fs.readFileSync("animes.json"));
 
-console.log(animes);
 const app = express();
+
+app.use(express.json());
 
 app.get("/home", (req, res) => {
     res.send("Hello World");
@@ -67,22 +70,24 @@ app.get("/anime/:name", (req, res) => {
         </html>
       `);
     } else {
-        res.status(404).send("Anime not found");
+        res.send("Anime not found");
     }
 });
 
 
 app.post('/anime', (req, res) => {
 
+  console.log(req.body);
     if (!req.body.title || !req.body.description  || !req.body.id) {
-        return res.status(400).send("Missing id or title or description");
+        return res.send("Missing id or title or description");
     }
     const { id, title, description } = req.body;
 
   // save it in our array
   animes.push({ id, title, description });
-    
-  console.log(animes);
+
+  fs.writeFileSync("animes.json", JSON.stringify(animes, null, 2));
+
 }) 
 app.listen(8000, () => {
     console.log("Server is running on port 8000");
